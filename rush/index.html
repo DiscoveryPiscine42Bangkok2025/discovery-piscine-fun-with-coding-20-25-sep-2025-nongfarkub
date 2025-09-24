@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Portfolio</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body { scroll-behavior: smooth; }
+  section { padding: 60px 0; }
+  #cv1, #cv2 { display: none; } /* เริ่มซ่อน CV ทั้งสอง */
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#top">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero / Selection -->
+<header id="top" class="bg-primary text-white text-center" style="padding:120px 0;">
+  <div class="container">
+    <h1>Welcome to Our Portfolio</h1>
+    <p class="lead">Choose a profile below:</p>
+    <button class="btn btn-light btn-lg m-2" onclick="showCV('A')">Natchanan Gothanaparsert</button>
+    <button class="btn btn-light btn-lg m-2" onclick="showCV('B')">Artitaya Nathnuea</button>
+  </div>
+</header>
+
+<!-- CV: Natchanan -->
+<section id="cv1">
+  <div class="container">
+    <h2 class="text-center">Natchanan Gothanaparsert</h2>
+    <p class="text-center">My name is Java</p>
+    <div class="row align-items-start">
+      <div class="col-md-4">
+        <!-- อัปโหลดรูปไว้ตาม path นี้ -->
+        <img src="assets/img/natchanan.jpg" class="img-fluid rounded" alt="Natchanan Gothanaparsert">
+      </div>
+      <div class="col-md-8">
+        <h4>About</h4>
+        <p>
+          First-year student, Faculty of Business Administration, Department of
+          Economics and Management from King Mongkut's Institute of Technology Ladkrabang
+        </p>
+        <h4>Skills &amp; Showcase</h4>
+        <ul class="mb-4">
+          <li><strong>Communication Skills</strong></li>
+          <li><strong>Problem-solving</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center my-3">
+      <button class="btn btn-secondary" onclick="backToTop()">Back to selection</button>
+    </div>
+  </div>
+</section>
+
+<!-- CV: Artitaya -->
+<section id="cv2" class="bg-light">
+  <div class="container">
+    <h2 class="text-center">Artitaya Nathnuea</h2>
+    <p class="text-center">My name is Namfar</p>
+    <div class="row align-items-start">
+      <div class="col-md-4">
+        <!-- อัปโหลดรูปไว้ตาม path นี้ -->
+        <img src="assets/img/artitaya.jpg" class="img-fluid rounded" alt="Artitaya Nathnuea">
+      </div>
+      <div class="col-md-8">
+        <h4>About</h4>
+        <p>
+          First-year student, Faculty of Business Administration, Department of
+          Economics and Manageme
